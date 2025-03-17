@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | VTU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    <body class="join-page">
+        <header>
+            <div class="nav-container">
+                <img src="images/logo.png" alt="Ventura Tenants Union Logo" class="logo">
+                <button class="menu-toggle">☰</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="stories.html">Tenant Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="page-wrapper">
+            <main>
+    <div class="columns-container">
+        <div class="left-column">
+            <h2 class="entry-title">Join Ventura Tenants Union</h2>
+            <p>
+                We are tenants across Ventura County organized into tenants associations in our buildings
+                and neighborhood-based local chapters. Since 2018, we have stood up to harassment, pressured our 
+                landlords to make long-overdue repairs, prevented evictions, protested, and won rent strikes across 
+                the city. Come to one of our local chapter meetings or any of our events to meet other tenants 
+                and join our fight!
+            </p>    
+            <!-- Embedded Google Form -->
+         <div class="form-container">
+            <iframe title="join-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfjw8_uQLkTG0Uhvl_qeKsJfjVhnLtmlmniW74VTBZTLp7uMw/viewform?embedded=true" 
+                    width="60%" 
+                    height="600" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0"
+                    aria-label="Membership Application Form">
+                Loading...
+            </iframe>
+        </div>
+    </div>
+        <div class="right-column">
+            <h2 class="entry-title">Pay Membership Dues</h2>
+            <p>
+                We are funded and run by our members. We do not have staff. Dues money goes to renting meeting spaces, 
+                hosting events, and buying supplies like interpretation equipment. 
+                We suggest for employed individuals $5/mo, unemployed individuals $1/mo. 
+                Any amount is welcome!
+            </p>
+            <!-- Dues button -->
+            <a href="https://givebutter.com/vLi69h" 
+               target="_blank" class="btn-79-link" aria-label="Join Ventura Tenants Union">
+                <button class="btn-79">
+                    <span>Pay Dues</span>
+                </button>
+            </a>
+        </div>
+    </div>
+</main>
+        </div>
+        <footer id="footer-placeholder"></footer>
+               
+<script>
+    // Load footer content
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').outerHTML = data;
+        });
+</script>
+    </body>
+</html>

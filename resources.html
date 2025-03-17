@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | VTU</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+    <body class="join-page">
+        <header>
+        <div class="nav-container">
+            <img src="images/logo.png" alt="Ventura Tenants Union Logo" class="logo">
+            <button class="menu-toggle">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="stories.html">Tenant Stories</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        </header>
+    <div class="page-wrapper">
+        <main>
+            <section>
+            <h2 class="entry-title">
+					Under Construction
+                </h2>
+                <p>tenant resources coming soon</p>
+            </section>
+        </main>
+        </div>
+        <footer id="footer-placeholder"></footer>
+               
+<script>
+    // Load footer content
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').outerHTML = data;
+        });
+</script>
+    </body>
+</html>

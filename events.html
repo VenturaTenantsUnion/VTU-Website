@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Events | VTU</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+                <img src="images/logo.png" alt="Ventura Tenants Union Logo" class="logo" />
+                <button class="menu-toggle">☰</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="stories.html">Tenant Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="page-wrapper">
+            <main>
+                <section class="calendar-intro">
+                    <div class="greeting">
+                        <h1>
+                            <span class="greeting">VTU's Public Calendar</span>
+                        </h1>
+                        <p>
+                            Join us for meetings, workshops, and advocacy efforts. All events are free and open to
+                            tenants.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="calendar-container">
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?src=430f5ac276db11d7497026d47fffcf07d2f42546290b6fa4bf0fa98ebe786b74%40group.calendar.google.com&ctz=America%2FLos_Angeles"
+                        style="border: 0"
+                        width="800"
+                        height="600"
+                        frameborder="0"
+                        scrolling="no">
+                    </iframe>
+                </section>
+            </main>
+        </div>
+        <footer id="footer-placeholder"></footer>
+               
+<script>
+    // Load footer content
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').outerHTML = data;
+        });
+</script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ventura Tenants Union</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
+          <!-- Existing meta tags -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <!-- For modern browsers -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io(1)/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io(1)/favicon-16x16.png">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io(1)/apple-touch-icon.png">
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+                <img src="images/logo.png" alt="Ventura Tenants Union Logo" class="logo" />
+                <button class="menu-toggle">☰</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="stories.html">Tenant Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main wrapper for content -->
+        <div class="page-wrapper">
+            <main>
+                <!-- Hero Section -->
+                <section class="hero">
+                    <div class="hero-content">
+                        <!-- Text on the left -->
+                        <div class="hero-text">
+                            <h1>
+                                <span class="highlight">
+                                    Ventura County tenants are organizing for safe, accessible, affordable housing.
+                                </span>
+                            </h1>
+                            <a href="join.html" target="_blank" class="btn-79-link">
+                                <button class="btn-79">
+                                    <span>Join Now</span>
+                                </button>
+                            </a>
+                        </div>
+                        <!-- Logo on the right -->
+                        <div class="hero-image-container">
+                            <img src="images/logo.png" alt="Hero Image" class="hero-image" />
+                        </div>
+                    </div>
+                </section>
+                <hr class="section-divider" />
+            </main>
+            </div>
+        <footer id="footer-placeholder"></footer>
+               
+<script>
+    // Load footer content
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').outerHTML = data;
+        });
+</script>
+            <script>
+                // Toggle mobile menu
+                document.querySelector(".menu-toggle").addEventListener("click", function () {
+                    document.querySelector("nav ul").classList.toggle("active");
+                });
+            </script>
+    </body>
+</html>

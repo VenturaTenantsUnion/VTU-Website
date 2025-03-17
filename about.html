@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Join the Ventura Tenants Union, a grassroots organization fighting for tenants' rights in Ventura County." />
+        <title>About | VTU</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet" />
+    </head>
+    <body class="join-page">
+        <header>
+            <div class="nav-container">
+                <img src="images/logo.png" alt="Ventura Tenants Union Logo" class="logo" />
+                <button class="menu-toggle">☰</button>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="stories.html">Tenant Stories</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main wrapper for content -->
+        <div class="page-wrapper">
+            <main class="about-section">
+                <div class="about-entry">
+                <h1>About Ventura Tenants Union</h1>
+                    <hr class="section-divider" />
+                </div>
+                <section class="about-container">
+                    <div class="about-text">
+                        <h1>Our organization and mission</h1>
+                        <p>
+                             Founded in 2018, the union is run by tenants, for tenants. Through collective efforts, we
+                            stand up to landlords, protect tenant rights, and build stronger communities. Join us in the
+                            fight to protect tenants and promote affordable housing.
+                        </p>
+                            The Ventura Tenants Union is building a diverse membership-based tenant-centered 
+                            movement fighting for the human right to housing for all. We demand truly affordable 
+                            and safe housing. Our mission is to strengthen tenants’ political power through 
+                            education, advocacy, and direct action. 
+                            Collectively, we have more strength as renters than the landlord class. 
+                            We aim to support the formation of autonomous tenant associations that can mobilize 
+                            across the county during lease negotiations with landlords and rent legislation with 
+                            government officials.
+                        <p>
+                           
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/power.jpeg" alt="Ventura Tenants Union Team" />
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer id="footer-placeholder"></footer>
+               
+<script>
+    // Load footer content
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').outerHTML = data;
+        });
+</script>
+    </body>
+</html>
