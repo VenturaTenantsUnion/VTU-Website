@@ -938,3 +938,141 @@ body.join-page p {
         height: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex: 1;
+    }
+}
+
+/* Main content layout */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    flex: 1;
+    max-width: 25%;
+    background-color: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #b22222; /* Red color for the button */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a .block {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -30%;
+    background-color: rgba(237, 157, 190, 0.5);
+    border-radius: 0 200% 200% 0;
+    transition: all 0.25s;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar ul li a .block span {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.sidebar ul li a .block span::before {
+    content: "\f054";
+    font-family: "FontAwesome";
+    font-size: 10px;
+    color: #fff;
+}
+
+.sidebar ul li a:hover .block {
+    left: 0;
+}
+
+.sidebar ul li a span[data-name="hover"] {
+    display: inline-block;
+    transition: all 0.25s;
+    transform: translate(0, 0);
+}
+
+.sidebar ul li a span[data-name="me"] {
+    margin-left: 0.25em;
+    transition: all 0.25s;
+    opacity: 1;
+}
+
+.btn-style902:hover span[data-name="me"] {
+    opacity: 0;
+}
+
+.btn-style902:hover span[data-name="hover"] {
+    transition-delay: 0.2s;
+    transform: translate(1.5em, 0);
+}
+
+.btn-style902:hover .block {
+    transition-delay: 0.2s;
+    left: 0;
+}
+
+/* Content styles */
+.content {
+    flex: 3;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex: 1;
+    }
+}

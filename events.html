@@ -67,5 +67,11 @@
             document.getElementById('footer-placeholder').outerHTML = data;
         });
 </script>
+<script>
+    // Toggle mobile menu
+    document.querySelector(".menu-toggle").addEventListener("click", function () {
+        document.querySelector("nav ul").classList.toggle("active");
+    });
+</script>
     </body>
 </html>
