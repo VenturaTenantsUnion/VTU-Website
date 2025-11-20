@@ -14,6 +14,7 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io(1)/favicon-16x16.png">
         <!-- Apple Touch Icon -->
         <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io(1)/apple-touch-icon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -53,16 +54,34 @@
                         </p>
                     </div>
                 </section>
-
                 <section class="calendar-container">
-                    <iframe
-                        src="https://calendar.google.com/calendar/embed?src=430f5ac276db11d7497026d47fffcf07d2f42546290b6fa4bf0fa98ebe786b74%40group.calendar.google.com&ctz=America%2FLos_Angeles"
-                        style="border: 0"
-                        width="800"
-                        height="600"
-                        frameborder="0"
-                        scrolling="no">
-                    </iframe>
+                    <div class="responsive-iframe-contrainer">
+                        <div class="calendar-container">
+                            <!-- Existing calendar for larger screens -->
+                            <div class="d-none d-md-block">
+                                <iframe 
+                                    src="https://calendar.google.com/calendar/embed?src=430f5ac276db11d7497026d47fffcf07d2f42546290b6fa4bf0fa98ebe786b74%40group.calendar.google.com&ctz=America%2FLos_Angeles" 
+                                    style="border-width:0" 
+                                    width="100%" 
+                                    height="600" 
+                                    frameborder="0" 
+                                    scrolling="no">
+                                </iframe>
+                            </div>
+
+                            <!-- Mobile-friendly calendar for smaller screens -->
+                            <div class="d-md-none">
+                                <iframe 
+                                    src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showPrint=0&mode=AGENDA&showTitle=0&showTabs=0&showTz=0&showNav=0&showDate=0" 
+                                    style="border-width:0" 
+                                    width="100%" 
+                                    height="400" 
+                                    frameborder="0" 
+                                    scrolling="yes">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
