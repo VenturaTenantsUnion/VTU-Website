@@ -892,9 +892,6 @@ body.join-page .btn-79 {
         width: 90%;
     }
 
-    .responsive-iframe-container {
-    }
-
     .calendar-container {
         padding: 1px;
        
@@ -1039,6 +1036,7 @@ body.join-page .btn-79 {
 @media (max-width: 480px) {
     .responsive-iframe-container {
         padding-top: 190%;
+        padding-right: 100%;
     }
 
     .calendar-container iframe {
