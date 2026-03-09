@@ -18,7 +18,7 @@
 }
 
 body {
-    background-color: var(--background-color);
+    background-color: var(--background-color) !important;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -84,6 +84,10 @@ nav ul {
 
 nav li {
     display: flex;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+    font-weight: bold;
+
 }
 
 nav a {
@@ -532,7 +536,7 @@ footer {
     font-size: 2rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--primary-color)
 }
 
 /* ====== JOIN PAGE STYLES ====== */
@@ -807,16 +811,7 @@ body.join-page .btn-79 {
         margin-right: 0;
         margin-bottom: 0;
     }
-
-    nav .logo-li a {
-        display: block !important;
-        width: 100%;
-        text-align: left;
-        padding: 0.9rem 1.2rem !important;
-        font-weight: 800;
-        font-size: 1.1rem;
-    }
-
+    
     nav a {
         width: 100%;
         text-align: center;
